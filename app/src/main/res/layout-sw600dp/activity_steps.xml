@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/recipe_name_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/ingredients_recyclerView">
+            </android.support.v7.widget.RecyclerView>
+
+            <com.rbrooks.indefinitepagerindicator.IndefinitePagerIndicator
+                android:id="@+id/recyclerview_pager_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:selectedDotColor="@android:color/holo_red_dark"
+                app:dotColor="@android:color/black"
+                android:layout_alignBottom="@id/ingredients_recyclerView"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stepsDescriptionRecyclerView">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/recipeStepsDetailsFragmentLayout"
+                android:layout_weight="1"
+                tools:context=".ui.activities.RecipeActivity" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

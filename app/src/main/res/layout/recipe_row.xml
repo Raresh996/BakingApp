@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recipe_row"
+    android:adjustViewBounds="true">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="@dimen/card_elevation"
+        card_view:cardCornerRadius="@dimen/card_corner_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recipe_image_height">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/recipe_image_height"
+                android:id="@+id/recipePoster_iv"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/favorite_iv"
+                android:src="@drawable/blackstar"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipeName_tv"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/recipe_name_padding_bottom_top"
+                android:paddingLeft="@dimen/recipe_name_padding_left"
+                android:paddingTop="@dimen/recipe_name_padding_bottom_top"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/recipe_name_text_size"
+                android:textStyle="bold"
+                android:background="@color/recipe_name_background"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipe_ingredients_iv"
+                android:src="@drawable/ingredients"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/recipe_steps_tv"
+                android:layout_marginBottom="@dimen/recipe_iv_bottom_margin_size"
+                android:layout_marginRight="@dimen/recipe_iv_right_margin_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipe_ingredients_tv"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_toLeftOf="@+id/recipe_ingredients_iv"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/recipe_tv_bottom_margin_size"
+                android:layout_marginRight="@dimen/recipe_tv_right_margin_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipe_steps_iv"
+                android:src="@drawable/steps"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/recipe_iv_bottom_margin_size"
+                android:layout_marginRight="@dimen/recipe_iv_right_margin_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipe_steps_tv"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_toLeftOf="@+id/recipe_steps_iv"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/recipe_tv_bottom_margin_size"
+                android:layout_marginRight="@dimen/recipe_tv_right_margin_size" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

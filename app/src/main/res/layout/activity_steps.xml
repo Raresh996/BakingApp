@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/recipe_name_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activities.RecipeActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/ingredients_recyclerView">
+    </android.support.v7.widget.RecyclerView>
+
+    <com.rbrooks.indefinitepagerindicator.IndefinitePagerIndicator
+        android:id="@+id/recyclerview_pager_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:selectedDotColor="@android:color/holo_red_dark"
+        app:dotColor="@android:color/black"
+        android:layout_alignBottom="@id/ingredients_recyclerView"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/stepsDescriptionRecyclerView"
+        android:layout_below="@id/recyclerview_pager_indicator">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

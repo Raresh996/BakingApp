@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recipe_image_height">300dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="recipe_name_text_size">22sp</dimen>
+    <dimen name="recipe_name_padding_left">10dp</dimen>
+    <dimen name="recipe_name_padding_bottom_top">5dp</dimen>
+    <dimen name="recipeDetails_padding">16dp</dimen>
+    <dimen name="stepDetails_padding">16dp</dimen>
+    <dimen name="recipe_tv_bottom_margin_size">5dp</dimen>
+    <dimen name="recipe_tv_right_margin_size">5dp</dimen>
+    <dimen name="recipe_iv_bottom_margin_size">5dp</dimen>
+    <dimen name="recipe_iv_right_margin_size">5dp</dimen>
+    <dimen name="ingredient_image_height">200dp</dimen>
+    <dimen name="ingredient_tv_size">14sp</dimen>
+    <dimen name="ingredient_name_text_size">14sp</dimen>
+    <dimen name="step_description_tv_size">18sp</dimen>
+    <dimen name="step_detail_tv_size">20sp</dimen>
+    <dimen name="step_detail_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="step_number_size">20sp</dimen>
+    <dimen name="play_image_margin_right">16dp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="recipe_name_widget_size">16sp</dimen>
+    <dimen name="widget_ingredient_name_size">18sp</dimen>
+    <dimen name="widget_recipe_name_margin">2dp</dimen>
+    <dimen name="ingredient_widget_margin">4dp</dimen>
+    <dimen name="widget_height_width">120dp</dimen>
+</resources>

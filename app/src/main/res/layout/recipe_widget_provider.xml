@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="@dimen/widget_margin"
+android:background="@color/colorPrimary"
+android:orientation="vertical">
+
+<TextView
+    android:id="@+id/recipeWidgetName_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:textSize="@dimen/recipe_name_widget_size"
+    android:text="@string/no_recipe_set_as_favorite"
+    android:layout_marginLeft="@dimen/widget_recipe_name_margin"/>
+
+<ListView
+    android:id="@+id/recipeSteps_lv"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" />
+
+</LinearLayout>

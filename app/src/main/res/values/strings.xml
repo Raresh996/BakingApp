@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Baking App</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="add_as_widget">Widget</string>
+    <string name="no_recipe_set_as_favorite">No Recipe set as favorite</string>
+    <string name="set_as_favorite">set as favorite</string>
+</resources>
