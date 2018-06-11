@@ -1,9 +1,9 @@
-# BakingApp
+﻿# BakingApp
 Google Udacity Android Developer Scholarship Project
 
 Baking App created for Udacity [Android Developer Nanodegree Program](https://eu.udacity.com/course/android-developer-nanodegree-by-google--nd801).
 
-![Screen](https://raw.githubusercontent.com/Raresh996/MoviesApp/master/poster/BakingApp.jpeg)
+![Screen](https://raw.githubusercontent.com/Raresh996/BakingApp/master/poster/BakingApp.jpeg)
 
 ## Used Libraries:
 
